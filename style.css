@@ -121,3 +121,19 @@ input::placeholder {
   width: 100%;
   outline: none;
 }
+
+#end-text {
+  font-size: 2.4rem;
+  color: white;
+  text-align: center;
+}
+
+#saveScoreBtn {
+  border: none;
+}
+
+.fa-home {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: rgb(240, 128, 128);
+}

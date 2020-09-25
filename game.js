@@ -29,13 +29,14 @@ let questions = [
     answer: 3,
   },
   {
-    question:
-      "What year did the empire Windrush carry its first wave of Jamaican immigrants to the UK?",
-    choice1: "1940",
-    choice2: "1888",
-    choice3: "1948",
-    choice4: "1999",
-    answer: 3,
+    question: "What led to the 1963 Bristol bus boycott?",
+    choice1:
+      "Rosa Parks being arrested for refusing to give up her seat for a white person.",
+    choice2:
+      "An 18 year old boy being told by a manager 'We don't employ black people'.",
+    choice3: "The toppling of the Colston statue.",
+    choice4: "The company refused to pay their fair share of taxes.",
+    answer: 2,
   },
   {
     question:
@@ -62,7 +63,7 @@ getNewQuestion = () => {
   if (avaliableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.localStorage.assign("/end.html");
+    window.location.href = "end.html";
   }
 
   questionCounter++;
